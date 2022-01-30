@@ -45,7 +45,7 @@ export default function Home({ posts }) {
         <p>Recent Posts : </p>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/post/${p.slug.current}`)} className="max-w-sm rounded overflow-hidden shadow-lg mb-5" key={index} >
-              <img src={p.mainImage} className="w-fit" alt="Sunset in the mountains" />
+              <img src={p.mainImage} className="w-fit" alt="Something" />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{p.title}</div>
                 <p className="text-gray-700 text-base">
